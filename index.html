@@ -4,10 +4,10 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta
       name="description"
-      content="Tech Radar: a tool to visualize technology choices, inspire and support Engineering teams to pick the best technologies for new projects"
+      content="Arch Radar: a tool to visualize technology choices, inspire and support Engineering teams to pick the best technologies for new projects"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tech Radar</title>
+    <title>Arch Radar</title>
     <!-- <link rel="shortcut icon" href="https://www.zalando.de/favicon.ico" /> -->
 
     <script src="d3.v7.min.js"></script>
@@ -26,20 +26,20 @@
         })
         .then(function (data) {
           radar_visualization({
-            repo_url: 'https://archinomicon.github.com/tech-radar',
-            title: 'Tech Radar',
+            repo_url: 'https://archinomicon.github.com/arch-radar',
+            title: 'Arch Radar',
             date: data.date,
             quadrants: [
-              { name: 'Languages' },
-              { name: 'Infrastructure' },
-              { name: 'Datastores' },
-              { name: 'Data Management' },
+              { name: 'Compliance & Risks' },
+              { name: 'Financial Markets' },
+              { name: 'Wholesale Banking' },
+              { name: 'Supporting Services' },
             ],
             rings: [
-              { name: 'ADOPT', color: '#5ba300' },
-              { name: 'TRIAL', color: '#009eb0' },
+              { name: 'USE', color: '#5ba300' },
+              { name: 'IMPLEMENT', color: '#009eb0' },
               { name: 'ASSESS', color: '#c7ba00' },
-              { name: 'HOLD', color: '#e09b96' },
+              { name: 'DECOMM', color: '#e09b96' },
             ],
             entries: data.entries,
           });

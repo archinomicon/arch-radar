@@ -76,16 +76,16 @@ Tech Radar is a static page, so it can be deployed using any hosting provider of
 
 ## Local Development
 
-1. install dependencies with yarn (or npm):
+1. install dependencies with npm:
 
 ```
-yarn
+npm i
 ```
 
 2. start local dev server:
 
 ```
-yarn start
+npm start
 ```
 
 3. your default browser should automatically open and show the url
