@@ -1,14 +1,17 @@
-# Technology Radar
+# Arch Radar
 
-An easy to use example of Tech Radar developed by Zalando.
+A simple example of Enterprise Architecture Radar
+(based on Zalando Tech Radar).
+
+A working example can be found at https://archinomicon.github.io/arch-radar/.
 
 ## Usage
 
 1. include `d3.js` and `radar.js`:
 
 ```html
-<script src="https://d3js.org/d3.v7.min.js"></script>
-<script src="https://zalando.github.io/tech-radar/release/radar-0.12.js"></script>
+<script src="d3.v7.min.js"></script>
+<script src="radar.js"></script>
 ```
 
 2. insert an empty `svg` tag:
@@ -21,7 +24,7 @@ An easy to use example of Tech Radar developed by Zalando.
 
 ```js
 radar_visualization({
-  repo_url: 'https://github.com/zalando/tech-radar',
+  repo_url: 'https://github.com/archinomicon/arch-radar',
   svg_id: 'radar',
   width: 1450,
   height: 1000,
@@ -34,7 +37,7 @@ radar_visualization({
   // Some font families might lead to font size issues
   // Arial, Helvetica, or Source Sans Pro seem to work well though
   font_family: 'Arial, Helvetica',
-  title: 'My Radar',
+  title: 'Arch Radar',
   quadrants: [
     { name: 'Bottom Right' },
     { name: 'Bottom Left' },
@@ -67,12 +70,9 @@ radar_visualization({
 Entries are positioned automatically so that they don't overlap. The "scale" parameter can help
 in adjusting the size of the radar.
 
-As a working example, you can check out `docs/index.html` &mdash; the source of our [public Tech
-Radar](http://zalando.github.io/tech-radar/).
-
 ## Deployment
 
-Tech Radar is a static page, so it can be deployed using any hosting provider of your choice offering static page hosting.
+Arch Radar is a static page, so it can be deployed using any hosting provider of your choice offering static page hosting.
 
 ## Local Development
 
